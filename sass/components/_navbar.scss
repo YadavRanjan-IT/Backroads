@@ -1,0 +1,22 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  justify-content: flex-start;
+
+  li {
+    list-style-type: none;
+
+    a:link,
+    a:visited {
+      text-decoration: none;
+      color: $color-grey-dark-1;
+      letter-spacing: 2px;
+      font-size: 1.5rem;
+
+      &:hover {
+        color: $color-blue-light-3;
+      }
+    }
+  }
+}
