@@ -1,0 +1,43 @@
+.header {
+  height: 100vh;
+
+  &__nav {
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0 1rem 2rem $color-black;
+  }
+}
+
+.banner {
+  background-blend-mode: color;
+  -webkit-background-blend-mode: color;
+  min-height: calc(100vh - 5rem);
+  background-image: linear-gradient(
+      to right,
+      $color-blue-dark-3,
+      $color-blue-light-3
+    ),
+    url(../img/main.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $color-white;
+
+  &__title {
+    font-size: 4rem;
+    font-weight: 500;
+    word-spacing: 1rem;
+    letter-spacing: 3px;
+  }
+
+  &__text {
+    font-size: 1.3rem;
+    width: 75%;
+    margin: 0 auto;
+  }
+}
